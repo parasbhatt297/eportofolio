@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paras Bhatt - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+          
+        }
+        .profile-img {
+            width: 200px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .project-table {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .project-table th {
+            background: #4a90e2;
+            color: white;
+        }
+        .hover-effect:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .fixed-announcement {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #4a90e2;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            z-index: 1000;
+        }
+        section {
+            padding: 80px 0;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Fixed Announcement -->
+    <div class="fixed-announcement">
+        🚀 Currently working on Advance Machine Learining Projects!
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Paras Bhatt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="text-center vh-100 d-flex align-items-center">
+        <div class="container">
+        
+                <img src="finalLogoParaflix.png" alt="Profile" class="profile-img hover-effect">
+            
+            <h1 class="display-4">Full Stack Developer & UI Designer</h1>
+            <p class="lead">Turning ideas into digital reality</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light">
+        <div class="container">
+            <h2 class="mb-5">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="finalLogoParaflix.png" alt="Profile" class="profile-img hover-effect">
+                </div>
+                <div class="col-md-8">
+                    <article>
+                        <h3>Hi, I'm Paras!</h3>
+                        <p>With good Understanding in web development, I specialize in creating responsive, user-friendly websites.I enjoy blending technical excellence with creative design Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quod facere vel tempore reiciendis iure doloribus laudantium soluta itaque fugiat voluptate adipisci sapiente ipsum veritatis, ad maiores dicta pariatur repellat sit voluptas, doloremque dolorum eum! Eaque error reiciendis doloribus in adipisci eos, ea ad soluta, deleniti animi quaerat reprehenderit amet saepe fugiat. Perferendis minima at iure tempora blanditiis consequatur suscipit esse eius. Sed architecto ipsam quidem voluptates nam nulla corporis maxime quam culpa recusandae! Delectus enim eum repellendus magnam ratione harum esse accusamus ea minima minus nesciunt repellat placeat eveniet quibusdam sequi dolores, veniam tenetur! Vitae minus ab error iure.</p>
+                        
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="mb-5">Projects</h2>
+            <table class="project-table table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Technology</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>E-commerce Platform</td>
+                        <td>Full-featured online shopping system</td>
+                        <td>React, Node.js</td>
+                        <td>2024-06</td>
+                    </tr>
+                    <tr>
+                        <td>Travel Blog CMS</td>
+                        <td>Content management for travel bloggers</td>
+                        <td>WordPress, PHP</td>
+                        <td>2024-01</td>
+                    </tr>
+                    <tr>
+                        <td>Fitness Tracker App</td>
+                        <td>Mobile workout tracking application</td>
+                        <td>Flutter, Firebase</td>
+                        <td>2024-09</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <h2 class="mb-5">Contact Me</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2025 Paras Bhatt. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
